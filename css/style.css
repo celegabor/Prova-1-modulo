@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font:1rem Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header{
+    height: 9vh;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+#sfumaturaHeader{
+    height: 1px;
+    width: 100vw;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    filter: drop-shadow(0px 16px 3px #919191b0);    background-color: white;
+}
+#icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 35px;
+    padding: 10px;
+}
+#logoScritta{
+    height: 50px;
+}
+#logoScritta img{
+    height: 100%;
+    object-fit: contain;
+}
+#search{
+    padding: 6px;
+    border-radius: 15px;
+    border: 1px solid #919191;
+}
+#T{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgb(255, 85, 0);
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.3em;
+    color: white;
+}
+
+/* corpo centrale che comprende main + footer*/
+
+#corpoCentrale{
+    display: flex;
+}
+
+/* footer */
+
+footer{
+    width: 35%;
+    padding: 20px 50px 20px 50px;
+}
+
+footer > div{
+    width: 90%;
+    padding: 15px 20px 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------ TWITTER ------- */
+#twitter{
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #9191915b;
+}
+#twitter > p{
+    font-size: 0.95em;
+    color: rgb(73, 68, 68);
+}
+#logoMT img{
+    height: 20px;
+    object-fit: contain;
+}
+#logoMT{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.piu{
+    font-size: 1.7em;
+    color: #919191;
+    margin: 5px;
+}
+.connect{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #919191;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    margin: 15px;
+}
+.connect img{
+    height: 20px;
+    object-fit: contain;
+    margin: 0 5px;
+}
+.connect a{
+    font-size: 0.9em;
+    color: #3f3e3e;
+    text-decoration: none;
+}
+#later{
+    color: #919191;
+    font-size: 0.9em;
+    margin: 10px 0 15px 0;
+}
+
+/* ------ TOPICS -------- */
+
+#topics{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#topics h3{
+    width: 100%;
+}
+.topics{
+    width: auto;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #9191911f;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/* ----- FOLLOW ------- */
+
+#follow{
+    padding-top: 30px;
+    position: -webkit-sticky;  
+    position: sticky;  
+    top: 0;
+}
+#follow > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+#follow > div > img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#follow > div a{
+    font-size: 0.8em;
+    margin: 5px;
+    height: 30px;
+    width: 14vw;
+    color: #919191;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+#follow > div h3{
+    font-weight: 700;
+    margin: 8px 5px;
+}
+.follow{
+    margin-top: 5px;
+    font-size: 0.8em;
+    border: 1px solid #919191;
+    border-radius: 20px;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+}
+
+/* ------ SAVED ------- */
+
+#saved{
+    position: -webkit-sticky;  
+    position: sticky;  
+    top: 330px;
+}
+#saved h3{
+    margin-bottom: 20px;
+}
+
+#saved > div > div{
+    display: flex;
+}
+#saved > div > div > p{
+    color: #919191;
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+#saved > div{
+    margin-bottom: 20px;
+}
+.savedProfile img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+}
+.savedProfile a, p{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    margin: 2px;
+}
+.savedProfile{
+    align-items: center;
+}
+.fa-star{
+    font-size: 0.6em;
+    margin: 7px;
+}
+.seeAll{
+    color: green;
+    font-size: 0.85em;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* ------ HELP ------- */
+
+#help{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    position: -webkit-sticky;  
+    position: sticky;  
+    top: 700px;
+}
+#help a{
+    margin: 5px 15px;
+    font-size: 0.9em;
+    color: #919191;
+    text-decoration: none;
+}
+
+/* main */
+
+main{
+    width: 65%;
+    padding: 50px;
+    border-right: 1px solid #91919140;
+}
+#pages{
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.34);
+}
+#pages a{
+    height: 100%;
+    padding: 15px 0;
+    color: gray;
+    font-size: 0.9em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#pagesHover{
+    border-bottom: 2px solid black;
+    color: #3f3e3e;
+}
+.sx{
+    width: 75%;
+}
+.dx{
+    width: 25%;
+    height: 150px;
+}
+.dx img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 25px;
+}
+.card{
+    padding-top: 30px;
+    display: flex;
+    height: 230px;
+}
+.cardLogo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 5px 10px 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.05em;
+}
+.name a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+.name p{
+    font-size: 0.95em;
+    color: #919191;
+}
+.title{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.descrizione{
+    color: #919191;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.contenitoreTempo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenitoreTempo p{
+    color: #919191;
+    font-size: 0.85em;
+}
+.incarico{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+    text-align: center;
+    background-color: #91919131;
+    border-radius: 10px;
+}
+.dataTempo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+.cardIcon{
+    margin: 20px 10px;
+}
+.cardIcon i{
+    margin-right: 10px;
+    font-size: 1.1em;
+}
