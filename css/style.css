@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font:1rem Arial, Helvetica, sans-serif;
+    font:0.83rem Arial, Helvetica, sans-serif;
 }
 
 /* header */
 
 header{
-    height: 9vh;
-    min-height: 70px;
+    height: 5vh;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,38 +19,44 @@ header{
     height: 1px;
     width: 100vw;
     margin-bottom: 20px;
-    margin-top: -15px;
-    filter: drop-shadow(0px 16px 3px #919191b0);    background-color: white;
+    margin-top: -10px;
+    filter: drop-shadow(0px 16px 3px #919191b0);    
+    background-color: white;
 }
 #icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
-    height: 35px;
+    width: 250px;
+    height: 25px;
     padding: 10px;
 }
+#icons i{
+    font-size: 1.1em;
+
+}
 #logoScritta{
-    height: 50px;
+    height: 30px;
 }
 #logoScritta img{
     height: 100%;
     object-fit: contain;
 }
 #search{
-    padding: 6px;
+    padding: 3px;
     border-radius: 15px;
     border: 1px solid #919191;
 }
 #T{
-    height: 35px;
-    width: 35px;
+    height: 22px;
+    width: 22px;
     border-radius: 50%;
     background-color: rgb(255, 85, 0);
     text-align: center;
-    line-height: 35px;
+    line-height: 22px;
     font-size: 1.3em;
     color: white;
+    z-index: 1;
 }
 
 /* corpo centrale che comprende main + footer*/
@@ -63,7 +69,7 @@ header{
 
 footer{
     width: 35%;
-    padding: 20px 50px 20px 50px;
+    padding: 20px;
 }
 
 footer > div{
@@ -76,7 +82,6 @@ footer > div{
 /* ------ TWITTER ------- */
 #twitter{
     display: flex;
-
     align-items: center;
     text-align: center;
     border-bottom: 1px solid #9191915b;
@@ -84,6 +89,7 @@ footer > div{
 #twitter > p{
     font-size: 0.95em;
     color: rgb(73, 68, 68);
+    width: 80%;
 }
 #logoMT img{
     height: 20px;
@@ -104,15 +110,15 @@ footer > div{
 .connect{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #919191;
     border-radius: 20px;
-    height: 40px;
-    width: 200px;
+    height: 25px;
+    width: 140px;
     margin: 15px;
 }
 .connect img{
-    height: 20px;
+    height: 15px;
     object-fit: contain;
     margin: 0 5px;
 }
@@ -124,7 +130,7 @@ footer > div{
 #later{
     color: #919191;
     font-size: 0.9em;
-    margin: 10px 0 15px 0;
+    margin: 5px;
 }
 
 /* ------ TOPICS -------- */
@@ -154,9 +160,6 @@ footer > div{
 
 #follow{
     padding-top: 30px;
-    position: -webkit-sticky;  
-    position: sticky;  
-    top: 0;
 }
 #follow > div{
     display: flex;
@@ -165,16 +168,15 @@ footer > div{
     padding: 10px 0;
 }
 #follow > div > img{
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
     object-fit: cover;
     border-radius: 50%;
     margin-right: 10px;
 }
 #follow > div a{
     font-size: 0.8em;
-    margin: 5px;
-    height: 30px;
+    margin: 2px;
     width: 14vw;
     color: #919191;
     display: -webkit-box;
@@ -186,27 +188,22 @@ footer > div{
 }
 #follow > div h3{
     font-weight: 700;
-    margin: 8px 5px;
+    margin: 0 5px;
 }
 .follow{
     margin-top: 5px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     border: 1px solid #919191;
     border-radius: 20px;
-    height: 30px;
-    width: 60px;
+    height: 25px;
+    width: 50px;
     text-align: center;
-    line-height: 30px;
+    line-height: 25px;
     background-color: white;
 }
 
 /* ------ SAVED ------- */
 
-#saved{
-    position: -webkit-sticky;  
-    position: sticky;  
-    top: 330px;
-}
 #saved h3{
     margin-bottom: 20px;
 }
@@ -246,8 +243,6 @@ footer > div{
     color: green;
     font-size: 0.85em;
     text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 50px;
 }
 
 /* ------ HELP ------- */
@@ -257,9 +252,6 @@ footer > div{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    position: -webkit-sticky;  
-    position: sticky;  
-    top: 700px;
 }
 #help a{
     margin: 5px 15px;
@@ -272,16 +264,16 @@ footer > div{
 
 main{
     width: 65%;
-    padding: 50px;
+    padding: 20px 40px;
     border-right: 1px solid #91919140;
 }
 #pages{
-    padding: 15px 0;
+    padding: 15px 0 5px 0;
     border-bottom: 1px solid rgba(128, 128, 128, 0.34);
 }
 #pages a{
     height: 100%;
-    padding: 15px 0;
+    padding: 15px 0 5px 0;
     color: gray;
     font-size: 0.9em;
     margin: 0 10px;
@@ -296,7 +288,7 @@ main{
 }
 .dx{
     width: 25%;
-    height: 150px;
+    height: 100px;
 }
 .dx img{
     height: 100%;
@@ -305,13 +297,13 @@ main{
     margin-top: 25px;
 }
 .card{
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
-    height: 230px;
+    height: 150px;
 }
 .cardLogo{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
@@ -377,4 +369,11 @@ main{
 .cardIcon i{
     margin-right: 10px;
     font-size: 1.1em;
+}
+
+.sticky{
+    position: -webkit-sticky;  
+    position: sticky;  
+    top: -60px;
+
 }
